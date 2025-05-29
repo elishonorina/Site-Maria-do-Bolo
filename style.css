@@ -4,11 +4,13 @@ body {
     font-family: "Poppins", "sans-serif";
     padding: 0;
     margin: 0;
+    background-color: #F2E9E0;
+    
 }
-
 .cabecalho {
+  color: #8773FB;
   height: 60px;
-  background-color: #e6c351; 
+  background-color: #53392E; 
   gap: 200px;
   position: fixed;
   width: 100%;
@@ -48,38 +50,81 @@ nav .menu {
   gap: 50px;
   padding: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 nav li a {
   position: relative;
   display: inline-block;
   padding: 10px;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 14px;
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
+#hero {
+  display: flex;
+  background: #DFBA90;
+  height: 450px;
+  padding: 50px 0;
+  justify-content: center;   /* Centraliza horizontalmente */
+  align-items: center;
+
+}
+
+#hero img {
+  margin-top: 20px;
+  height: 500px;
+}
+
+span {
+  color: #53392E;
+}
+
+.texto_hero {
+  padding: 50px ;
+  max-width: 600px;
+}
+
+.texto_hero h1 {
+  font-size: 80px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.texto_hero h2 {
+  color: #53392E;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 14px;
+}
+
 /*PRODUTOS*/
 
+#produtos h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  text-align: center;
+}
+
 .caixas_projetos {
-    margin-top: 100px;
+    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 51px;
     width: 100%;
     box-sizing: border-box;
 }
 
 
 .caixa_projetos {
-  height: auto;
+  height: 350px;
   width: 300px;
-  background-color: #e6c351;
+  background-color: white;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.205);
   border-radius: 10px;
   text-align: left;
   transition: transform 0.5s ease-in-out;
@@ -87,31 +132,25 @@ nav li a {
 
   
 .caixa_projetos:hover{
-  transform: translateY(-8x);
+  transform: translateY(-10px);
 }
 
 .texto_projetos {
   margin: auto;
   text-align: left;
-  padding: 20px;
+  padding: 5px 20px;
 }
 
 .texto_projetos h2 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: white;
+  color: #53392E;
   text-align: left;
 }
 
 .texto_projetos p {
   font-size: 12px;
-  color: #ccc;
-}
-
-.texto_projetos h4 {
-  padding-top: 10px;
-  color: #8773FB;
-  font-size: 9px;
+  color: #53392E;
 }
 
 .caixa_projetos img {
