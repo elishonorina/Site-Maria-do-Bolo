@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", "sans-serif";
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho {
+  height: 60px;
+  background-color: #e6c351; 
+  gap: 200px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.icons_header {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.icons_header img {
+  width: 18px;
+}
+
+.icons_header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  transition: transform 0.2s ease-in-out, background-color 0.4s;
+}
+
+.icons_header a:hover {
+  transform: translateY(-4px);
+}
+
+
+nav .menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav li a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/*PRODUTOS*/
+
+.caixas_projetos {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.caixa_projetos {
+  height: auto;
+  width: 300px;
+  background-color: #e6c351;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+  
+.caixa_projetos:hover{
+  transform: translateY(-8x);
+}
+
+.texto_projetos {
+  margin: auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.texto_projetos h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+}
+
+.texto_projetos p {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.texto_projetos h4 {
+  padding-top: 10px;
+  color: #8773FB;
+  font-size: 9px;
+}
+
+.caixa_projetos img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
