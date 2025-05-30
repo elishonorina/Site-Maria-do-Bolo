@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -19,10 +19,15 @@ a:active {
   color: inherit;
 }
 
+header {
+  width: 100%;
+}
+
+
 .cabecalho {
   color: white;
   height: 60px;
-  background-color: #53392E; 
+  background-color: #53392E;
   gap: 200px;
   position: fixed;
   width: 100%;
@@ -32,6 +37,36 @@ a:active {
   z-index: 10000;
 }
 
+.titulo_header {
+  font-family: "Caveat", "sans-serif";
+  font-size: 30px;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.icons_header {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icons_header img {
+  width: 20px;
+}
+
+.icons_header a {
+  transition: transform 0.2s ease-in-out;
+}
+
+.icons_header a:hover {
+  transform: translateY(-4px);
+}
+
+
 nav .menu {
   display: flex;
   justify-content: center;
@@ -39,13 +74,15 @@ nav .menu {
   gap: 50px;
   padding: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 nav li a {
   position: relative;
   display: inline-block;
   padding: 10px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   color: white;
   text-decoration: none;
@@ -53,22 +90,27 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #DFBA90;
-
+  color: #FFC74E;
 }
+
+
 #hero {
-  display: flex;
   background: #FFC74E;
   height: 490px;
   padding: 50px 0;
-  justify-content: center;   /* Centraliza horizontalmente */
+  
+}
+.conteudo_hero {
+  margin: auto;
+  gap: 10px;
+  display: flex;
+  justify-content: center;  
   align-items: center;
-
 }
 
 #hero img {
-  margin-top: 75px;
-  height: 500px;
+  margin-top: 30px;
+  height: 450px;
 }
 
 span {
@@ -76,8 +118,8 @@ span {
 }
 
 .texto_hero {
-  padding: 50px ;
   max-width: 600px;
+  margin-bottom: 50px;
 }
 
 .texto_hero h1 {
@@ -127,7 +169,7 @@ span {
 }
 
 #contato {
-  margin-bottom: 100px;
+  margin: 200px 0px;
 }
 
 .info {
@@ -142,33 +184,80 @@ span {
 
 .caixa_info {
   background-color: white;
-  height: 400px;
-  width: 300px;
+  height: 300px;
+  width: 280px;
   position: relative;
   border-radius: 12px;
   overflow: visible;
 }
 
-.caixa_info h2 {
-  padding-top: 180px;
+.texto_info h3,
+.texto_info h4,
+.texto_info h5 {
+  margin: 0; /* remove margens padrão */
+  padding: 0; /* limpa espaçamentos antigos */
+}
+
+.texto_info {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: -10px;
+}
+
+.texto_info h2 {
+  margin-top: 100px;
   text-align: center;
 }
 
+.texto_info h3 {
+  font-weight: 400;
+}
+
+.texto_info h4 {
+  margin-top: 50px;
+  color: #53392E;
+}
+
+.texto_info h5 {
+  margin-top: 50px;
+  width: 200px;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+
+
 .circulo {
   position: absolute;
-  top: -50px; /* move pra cima */
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
   background-color: #FFC74E;
   border-radius: 50%;
   z-index: 2;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.circulo img {
+  height: 50px;
+  margin-bottom: 5px;
 }
 
 #sobre {
   background: #FFC74E;
-  padding-top: 100px;
+  padding: 100px 0px;
+}
+
+#historia {
+  font-size: 38px;
 }
 
 .sinopse {
@@ -176,14 +265,30 @@ span {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+  margin:  150px 0px;
+}
+
+.sinopse img {
+  border-radius: 5px;
+  height: 400px;
 }
 
 .texto_sobre {
-  padding: 20px;
   width: 500px;
   text-align: left;
   display: flex;
   flex-direction: column;
+}
+
+.texto_sobre h1 {
+  color: #53392E;
+  
+}
+
+.texto_sobre p {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .carrossel {
@@ -192,6 +297,7 @@ span {
 }
 
 .carrossel-inner {
+  gap: 20px;
   display: flex;
   transition: transform 0.6s ease;
 }
@@ -201,4 +307,8 @@ span {
   height: 300px;
   object-fit: cover;
   flex-shrink: 0;
+}
+
+footer h1 {
+  font-family: "Caveat", "sans-serif";
 }

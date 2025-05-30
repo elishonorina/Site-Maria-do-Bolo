@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <header class="cabecalho">
-       <!--<div class="logo_header">Maria do Bolo</div>--> 
+   <header class="cabecalho">
+        <div class="titulo_header">Maria do Bolo</div>
             <nav>
                 <ul class="menu">
                     <li><a href="#hero" class="link">Início</a></li>
@@ -17,14 +17,21 @@
                     <li><a href="#sobre" class="link">Sobre Nós</a></li>
                 </ul>
             </nav>
+            <ul class="icons_header">
+                        <li><a href="https://github.com/elishonorina" target="_blank"><img src="assets/instagram_inicio.svg" alt="Github"></a></li>
+
+                        <li><a href="https://www.linkedin.com/in/elishonorina/" target="_blank"><img src="assets/linkedin_inicio.svg" alt="Linkedin"></a></li>
+            </ul>
     </header>
     <main>
         <section id="hero">
-            <div class="texto_hero">
-                <h1>O <span>sabor</span> da raiz.</h1>
-                <h2>Toda receita tem uma história — a nossa vem do interior.</h2>
+            <div class="conteudo_hero">
+                <div class="texto_hero">
+                    <h1>O <span>sabor</span> da raiz.</h1>
+                    <h2>Toda receita tem uma história — a nossa vem do interior.</h2>
+                </div>
+                <img src="assets/vecteezy_ai-generated-coconut-with-half-and-leaves-isolated-on_35320466.png" alt="">
             </div>
-            <img src="assets/vecteezy_ai-generated-coconut-with-half-and-leaves-isolated-on_35320466.png" alt="">
 
         </section>
 
@@ -48,17 +55,20 @@
                         <h2>Doces em Calda</h2>
                     </div>
                 </a>
-                <a href="paginas/diversos.html">
-                    <div class="caixa_produtos">
-                        <h2>Diversos</h2>
-                    </div>
-                </a>
 
                 <a href="paginas/pacotes/pacotes.html">
                     <div class="caixa_produtos">
                         <h2>Pacotes</h2>
                     </div>
                 </a>
+
+                <a href="paginas/diversos.html">
+                    <div class="caixa_produtos">
+                        <h2>Diversos</h2>
+                    </div>
+                </a>
+
+                
             </div>
         </section>
 
@@ -67,19 +77,36 @@
                 <h1>CONTATO E LOCALIZAÇÃO</h1>
             </div>
             <div class="info">
-                
                 <div class="caixa_info">
-                    <div class="circulo"></div>
-                    <h2>WhatsApp</h2>
+                    <div class="circulo">
+                        <img src="assets/zap marrom.svg" alt="">
+                    </div>
+                    <div class="texto_info">
+                        <h2>WhatsApp</h2>
+                        <h3>(79)99975-9908</h3>
+                        <h4>Clique aqui para acessar</h4>
+                    </div>
                 </div>
                 <div class="caixa_info">
-                    <div class="circulo"></div>
-                        <h2>Localização</h2>
+                    <div class="circulo">
+                        <img src="assets/loc.svg" alt="">
+                    </div>
+                        <div class="texto_info">
+                            <h2>Localização</h2>
+                            <h3>Box 96</h3>
+                            <h5>Av. José Carlos Silva, 2388 - Farolândia, Aracaju - SE, 49031-050</h5>
+                        </div>
                 </div>
 
                 <div class="caixa_info">
-                    <div class="circulo"> </div>
-                        <h2>Instagram</h2>
+                    <div class="circulo">
+                        <img src="assets/instagram marrom.svg" alt="">
+                    </div>
+                        <div class="texto_info">
+                            <h2>Instagram</h2>
+                            <h3>@mariadoboloaju</h3>
+                            <h4>Clique aqui para acessar</h4>
+                        </div>
                 </div>
             </div>
         </section>
@@ -90,8 +117,12 @@
 
 
     <section id="sobre">
+        <div class="titulo" >
+                <h1 id="historia">NOSSA HISTÓRIA</h1>
+            </div>
+
         <div class="sinopse">
-            <img src="https://picsum.photos/id/1015/300/300" alt="">
+            <img src="assets/itabaiana P.jpg" alt="" id="foto1">
             <div class="texto_sobre">
                 <h1>Onde começou?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non cumque rem esse ad ipsam, exercitationem soluta in, distinctio excepturi deleniti voluptates aliquam rerum magnam quibusdam quos eveniet. Quos, numquam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque consequuntur ratione veniam? Repudiandae ab beatae neque et laboriosam blanditiis unde itaque, velit dolorum sequi animi deserunt quia hic eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aspernatur deleniti sit, enim eos iusto perspiciatis praesentium quam velit delectus ipsum cum vero ad esse. Praesentium amet ut voluptas blanditiis?</p>
@@ -117,11 +148,21 @@
             <img src="https://picsum.photos/id/1045/300/300" alt="">
             </div>
         </div>
+
+        <div class="sinopse">
+            <img src="assets/itabaiana P.jpg" alt="" id="foto1">
+            <div class="texto_sobre">
+                <h1>Onde começou?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non cumque rem esse ad ipsam, exercitationem soluta in, distinctio excepturi deleniti voluptates aliquam rerum magnam quibusdam quos eveniet. Quos, numquam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque consequuntur ratione veniam? Repudiandae ab beatae neque et laboriosam blanditiis unde itaque, velit dolorum sequi animi deserunt quia hic eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aspernatur deleniti sit, enim eos iusto perspiciatis praesentium quam velit delectus ipsum cum vero ad esse. Praesentium amet ut voluptas blanditiis?</p>
+            </div>
+        </div>
     </section>
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <h1>Maria do Bolo</h1>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

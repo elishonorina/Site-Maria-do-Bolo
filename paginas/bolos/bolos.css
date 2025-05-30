@@ -5,11 +5,14 @@ body {
     padding: 0;
     margin: 0;
     background-color: #F2E9E0;
-    
+    display: flex;
+    justify-content: center;
 }
+    
 
 main {
-    padding-top: 80px;
+  max-width: 1300px;
+  padding-top: 80px;
 }
 
 .cabecalho {
