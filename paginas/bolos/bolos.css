@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", "sans-serif";
+    padding: 0;
+    margin: 0;
+    background-color: #F2E9E0;
+    
+}
+
+main {
+    padding-top: 80px;
+}
+
+.cabecalho {
+  color: #8773FB;
+  height: 60px;
+  background-color: #53392E; 
+  gap: 200px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.icons_header {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.icons_header img {
+  width: 18px;
+}
+
+.icons_header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  transition: transform 0.2s ease-in-out, background-color 0.4s;
+}
+
+.icons_header a:hover {
+  transform: translateY(-4px);
+}
+
+
+nav .menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  padding: 0;
+  width: 100%;
+}
+
+nav li a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#produtos h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.caixas_projetos {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 51px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.caixa_projetos {
+  height: 350px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+  
+.caixa_projetos:hover{
+  transform: translateY(-10px);
+}
+
+.texto_projetos {
+  margin: auto;
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.texto_projetos h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #53392E;
+  text-align: left;
+}
+
+.texto_projetos p {
+  font-size: 12px;
+  color: #53392E;
+}
+
+.caixa_projetos img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}

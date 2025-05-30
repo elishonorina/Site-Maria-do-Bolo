@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", "sans-serif";
     padding: 0;
     margin: 0;
-    background-color: #F2E9E0;
-    
+    background-color: #FAF1CC;
 }
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .cabecalho {
-  color: #8773FB;
+  color: white;
   height: 60px;
   background-color: #53392E; 
   gap: 200px;
@@ -19,29 +31,6 @@ body {
   align-items: center;
   z-index: 10000;
 }
-
-.icons_header {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-
-.icons_header img {
-  width: 18px;
-}
-
-.icons_header a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  transition: transform 0.2s ease-in-out, background-color 0.4s;
-}
-
-.icons_header a:hover {
-  transform: translateY(-4px);
-}
-
 
 nav .menu {
   display: flex;
@@ -63,10 +52,14 @@ nav li a {
   transition: color 0.3s ease;
 }
 
+nav li a:hover {
+  color: #DFBA90;
+
+}
 #hero {
   display: flex;
-  background: #DFBA90;
-  height: 450px;
+  background: #FFC74E;
+  height: 490px;
   padding: 50px 0;
   justify-content: center;   /* Centraliza horizontalmente */
   align-items: center;
@@ -74,7 +67,7 @@ nav li a {
 }
 
 #hero img {
-  margin-top: 20px;
+  margin-top: 75px;
   height: 500px;
 }
 
@@ -100,65 +93,112 @@ span {
   font-size: 14px;
 }
 
-/*PRODUTOS*/
 
-#produtos h1 {
+.titulo h1 {
+  text-align: center;
+  padding: 100px 0px 50px 0px;
   font-size: 30px;
-  letter-spacing: 2px;
+  color: black;
+}
+
+
+.caixas_produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa_produtos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 450px;
+  height: 150px;
+  background-color: #FFC74E;
+}
+
+.caixa_produtos h1 {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+#contato {
+  margin-bottom: 100px;
+}
+
+.info {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   margin-top: 100px;
+}
+
+.caixa_info {
+  background-color: white;
+  height: 400px;
+  width: 300px;
+  position: relative;
+  border-radius: 12px;
+  overflow: visible;
+}
+
+.caixa_info h2 {
+  padding-top: 180px;
   text-align: center;
 }
 
-.caixas_projetos {
-    padding-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 51px;
-    width: 100%;
-    box-sizing: border-box;
+.circulo {
+  position: absolute;
+  top: -50px; /* move pra cima */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  background-color: #FFC74E;
+  border-radius: 50%;
+  z-index: 2;
 }
 
+#sobre {
+  background: #FFC74E;
+  padding-top: 100px;
+}
 
-.caixa_projetos {
-  height: 350px;
-  width: 300px;
-  background-color: white;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.205);
-  border-radius: 10px;
+.sinopse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto_sobre {
+  padding: 20px;
+  width: 500px;
   text-align: left;
-  transition: transform 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
-  
-.caixa_projetos:hover{
-  transform: translateY(-10px);
-}
-
-.texto_projetos {
-  margin: auto;
-  text-align: left;
-  padding: 5px 20px;
-}
-
-.texto_projetos h2 {
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: #53392E;
-  text-align: left;
-}
-
-.texto_projetos p {
-  font-size: 12px;
-  color: #53392E;
-}
-
-.caixa_projetos img {
+.carrossel {
   width: 100%;
-  object-fit: cover;
-  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
 }
 
-#doces {
-  margin-top: 100px;
+.carrossel-inner {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.carrossel-inner img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
