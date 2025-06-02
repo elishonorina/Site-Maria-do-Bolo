@@ -37,16 +37,32 @@ O projeto está disponível no GitHub Pages:
 
 ## 📁 Estrutura do projeto
 
+## 📁 Estrutura do projeto
+
 ```bash
 ├── index.html
 ├── css/
-│   └── style.css
+│   ├── global.css
+│   ├── inicial.css
+│   ├── bolos.css
+│   ├── doces.css
+│   ├── pacotes.css
+│   ├── diversos.css
 ├── js/
 │   └── script.js
-└── assets/
-    ├── imagens/
-    └── fontes/
-```
+├── assets/
+│   ├── imagens/
+│   └── fontes/
+└── pages/
+    ├── bolos/
+    │   └── bolos.html
+    ├── doces/
+    │   └── doces.html
+    ├── pacotes/
+    │   └── pacotes.html
+    └── diversos/
+        └── diversos.html
+
 
 ## 🖼️ Preview
 
