@@ -35,7 +35,6 @@ O projeto foi desenvolvido utilizando apenas tecnologias puras da web:
 O projeto está disponível no GitHub Pages:  
 🔗 [https://#.github.io/#](https://#.github.io/#)
 
-## 📁 Estrutura do projeto
 
 ## 📁 Estrutura do projeto
 
@@ -62,11 +61,12 @@ O projeto está disponível no GitHub Pages:
     │   └── pacotes.html
     └── diversos/
         └── diversos.html
+```
 
 
 ## 🖼️ Preview
 
-![Screenshot do site](./#.png)
+[Screenshot do site](./#.png)
 
 
 
