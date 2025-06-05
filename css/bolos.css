@@ -1,0 +1,59 @@
+main {
+  padding-top: 60px; /* mesma altura do header */
+}
+
+#produtos h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.caixas_projetos {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 51px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.caixa_projetos {
+  height: 350px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+  
+.caixa_projetos:hover{
+  transform: translateY(-10px);
+}
+
+.texto_projetos {
+  margin: auto;
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.texto_projetos h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #53392E;
+  text-align: left;
+}
+
+.texto_projetos p {
+  font-size: 12px;
+  color: #53392E;
+}
+
+.caixa_projetos img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
