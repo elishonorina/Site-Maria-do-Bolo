@@ -19,9 +19,8 @@
                 </ul>
             </nav>
             <ul class="icons_header">
-                        <li><a href="#" target="_blank"><img src="assets/instagram_inicio.svg" alt="Instagram"></a></li>
-
-                        <li><a href="#" target="_blank"><img src="assets/linkedin_inicio.svg" alt="WhatsApp"></a></li>
+                        <a href="#" target="_blank"><li><img src="assets/instagram_inicio.svg" alt="Instagram"></a></li>
+                        <a href="#" target="_blank"><li><img src="assets/linkedin_inicio.svg" alt="WhatsApp"></a></li>
             </ul>
     </header>
     <main>
@@ -40,6 +39,23 @@
         <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
             <path fill="#FFC74E" d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z"></path>
         </svg>
+
+        <div class="carrossel">
+            <div class="carrossel-inner" id="carrosselInner">
+            <!-- Imagens originais -->
+            <img src="assets/retangulo amarelo.png" alt="">
+            <img src="assets/retangulo marrom.png" alt="">
+            <img src="assets/retangulo amarelo.png" alt="">
+            <img src="assets/retangulo marrom.png" alt="">
+            <img src="assets/retangulo amarelo.png" alt="">
+
+            <!-- Clones das 4 primeiras para loop suave -->
+            <img src="assets/retangulo marrom.png" alt="">
+            <img src="assets/retangulo amarelo.png" alt="">
+            <img src="assets/retangulo marrom.png" alt="">   
+            <img src="assets/retangulo amarelo.png" alt="">
+            </div>
+        </div>
 
         <section id="produtos">
             <div class="titulo">
@@ -92,10 +108,10 @@
                     <div class="circulo">
                         <img src="assets/loc.svg" alt="">
                     </div>
-                        <div class="texto_info">
+                        <div class="texto_info" id="loc">
                             <h2>Localização</h2>
-                            <h3>Box 96</h3>
-                            <h5>Av. José Carlos Silva, 2388 - Farolândia, Aracaju - SE, 49031-050</h5>
+                            <h3>Box 96<br>Mercado Municipal</h3>
+                            <h4>Clique aqui para acessar</h4>
                         </div>
                 </div>
 
@@ -125,38 +141,23 @@
         <div class="sinopse">
             <img src="assets/itabaiana P.jpg" alt="" id="foto1">
             <div class="texto_sobre">
-                <h1>Onde começou?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non cumque rem esse ad ipsam, exercitationem soluta in, distinctio excepturi deleniti voluptates aliquam rerum magnam quibusdam quos eveniet. Quos, numquam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque consequuntur ratione veniam? Repudiandae ab beatae neque et laboriosam blanditiis unde itaque, velit dolorum sequi animi deserunt quia hic eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aspernatur deleniti sit, enim eos iusto perspiciatis praesentium quam velit delectus ipsum cum vero ad esse. Praesentium amet ut voluptas blanditiis?</p>
+                <h1>ONDE COMEÇOU?</h1>
+                <p>Nossa história teve início de forma simples, entre as barracas movimentadas das feiras livres de Itabaiana. Foi ali que a família começou a vender bolos, doces e outras delícias feitas em casa, sempre seguindo receitas tradicionais cuidadosamente guardadas e passadas de geração em geração. Cada preparo era feito com ingredientes frescos, atenção aos detalhes e o carinho de quem coloca a alma na cozinha. Com o crescimento natural do trabalho e o desejo de alcançar novos espaços, viemos para Aracaju. Mesmo com a mudança, mantivemos firmes os mesmos princípios: respeitar as origens, valorizar o feito à mão e preservar o sabor típico que desperta lembranças e aquece o coração. Hoje, seguimos produzindo com a mesma dedicação, levando até nossos clientes o gosto autêntico do interior, cheio de história, cuidado e tradição.</p>
             </div>
         </div>
             
-         <div class="carrossel">
-            <div class="carrossel-inner" id="carrosselInner">
-            <!-- Imagens originais -->
-            <img src="https://picsum.photos/id/1015/300/300" alt="">
-            <img src="https://picsum.photos/id/1025/300/300" alt="">
-            <img src="https://picsum.photos/id/1035/300/300" alt="">
-            <img src="https://picsum.photos/id/1045/300/300" alt="">
-            <img src="https://picsum.photos/id/1055/300/300" alt="">
-            <img src="https://picsum.photos/id/1065/300/300" alt="">
-            <img src="https://picsum.photos/id/1075/300/300" alt="">
-            <img src="https://picsum.photos/id/1085/300/300" alt="">
-      
-            <!-- Clones das 4 primeiras para loop suave -->
-            <img src="https://picsum.photos/id/1015/300/300" alt="">
-            <img src="https://picsum.photos/id/1025/300/300" alt="">
-            <img src="https://picsum.photos/id/1035/300/300" alt="">
-            <img src="https://picsum.photos/id/1045/300/300" alt="">
-            </div>
-        </div>
+         
 
-        <div class="sinopse">
-            <img src="assets/itabaiana P.jpg" alt="" id="foto1">
+        <div class="sinopse maria">
             <div class="texto_sobre">
-                <h1>Onde começou?</h1>
+                <h1>QUEM É MARIA DO BOLO?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non cumque rem esse ad ipsam, exercitationem soluta in, distinctio excepturi deleniti voluptates aliquam rerum magnam quibusdam quos eveniet. Quos, numquam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque consequuntur ratione veniam? Repudiandae ab beatae neque et laboriosam blanditiis unde itaque, velit dolorum sequi animi deserunt quia hic eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aspernatur deleniti sit, enim eos iusto perspiciatis praesentium quam velit delectus ipsum cum vero ad esse. Praesentium amet ut voluptas blanditiis?</p>
             </div>
+            <img src="assets/pessoa.jpg" alt="" id="foto1">
         </div>
+
+        
+
     </section>
 
     </main>
