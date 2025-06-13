@@ -61,15 +61,20 @@ span {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  width: 450px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   background-color: #FFC74E;
+  transition: transform 0.3s ease-in-out;
 }
 
 .caixa_produtos h1 {
   font-size: 30px;
   color: white;
   text-decoration: none;
+}
+
+.caixa_produtos:hover {
+  transform: translateY(-10px);
 }
 
 #contato {
@@ -107,7 +112,6 @@ span {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  gap: -10px;
 }
 
 .texto_info h2 {
@@ -124,11 +128,13 @@ span {
   color: #53392E;
 }
 
-.texto_info h5 {
-  margin-top: 50px;
-  width: 200px;
-  font-weight: 400;
-  font-size: 10px;
+#loc h4 {
+  margin-top: 22px;
+}
+
+.texto_info h4:hover {
+  cursor: pointer;
+  color: #FFC74E;
 }
 
 
@@ -169,24 +175,26 @@ span {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 60px;
   margin:  150px 0px;
 }
 
 .sinopse img {
   border-radius: 5px;
-  height: 400px;
+  height: 500px;
 }
 
 .texto_sobre {
   width: 500px;
-  text-align: left;
+  align-items: flex-start;
+  text-align: justify;
   display: flex;
   flex-direction: column;
 }
 
 .texto_sobre h1 {
   color: #53392E;
+  font-size: 38px;
   
 }
 
@@ -195,13 +203,23 @@ span {
   margin-top: 0;
 }
 
+.maria {
+  margin-top: 250px;
+}
+
+.maria .texto_sobre {
+  align-items: flex-end;
+  text-align: justify;
+}
+
 .carrossel {
+  margin-top: 200px;
   width: 100%;
   overflow: hidden;
 }
 
 .carrossel-inner {
-  gap: 20px;
+  gap: 5px;
   display: flex;
   transition: transform 0.6s ease;
 }
@@ -213,6 +231,3 @@ span {
   flex-shrink: 0;
 }
 
-footer h1 {
-  font-family: "Caveat", "sans-serif";
-}

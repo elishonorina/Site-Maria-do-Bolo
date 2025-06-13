@@ -47,7 +47,7 @@ header {
 .icons_header {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,11 +58,11 @@ header {
   width: 20px;
 }
 
-.icons_header a {
-  transition: transform 0.2s ease-in-out;
+.icons_header li {
+  transition: transform 0.3s ease-in-out;
 }
 
-.icons_header a:hover {
+.icons_header li:hover {
   transform: translateY(-4px);
 }
 
@@ -91,4 +91,15 @@ nav li a {
 
 nav li a:hover {
   color: #FFC74E;
+}
+
+footer {
+  display: flex;
+  height: 300px;
+}
+
+footer h1 {
+  color: #53392E;
+  
+  font-family: "Caveat", "sans-serif";
 }

@@ -1,21 +1,23 @@
-const inner = document.getElementById("carrosselInner");
-    const images = inner.querySelectorAll("img");
-    const imageWidth = 300;
-    const visibleCount = 4;
-    const totalSlides = images.length - visibleCount; // exclui clones no cálculo do fim real
-    let index = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const inner = document.getElementById("carrosselInner");
+  const images = inner.querySelectorAll("img");
+  const imageWidth = 300; // Largura fixa de cada imagem (ajuste conforme necessário)
+  let index = 0;
 
-    setInterval(() => {
-      index++;
-      inner.style.transition = "transform 0.6s ease";
-      inner.style.transform = `translateX(-${index * imageWidth}px)`;
+  function slide() {
+    index++;
+    inner.style.transition = "transform 0.6s ease";
+    inner.style.transform = `translateX(-${index * imageWidth}px)`;
 
-      // Quando chegar no final das imagens reais, reposiciona para o início sem transição
-      if (index === totalSlides) {
-        setTimeout(() => {
-          inner.style.transition = "none";
-          index = 0;
-          inner.style.transform = "translateX(0)";
-        }, 600); // mesmo tempo da transição
-      }
-    }, 5000); // intervalo entre trocas (2s)
+    // Quando chega nos clones (fim), reinicia no original suavemente
+    if (index >= images.length - 4) { // -4 porque são os clones
+      setTimeout(() => {
+        inner.style.transition = "none";
+        index = 0;
+        inner.style.transform = "translateX(0)";
+      }, 600); // Tempo da transição
+    }
+  }
+
+  setInterval(slide, 3000); // Troca a cada 3s
+});
