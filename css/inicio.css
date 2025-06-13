@@ -1,7 +1,8 @@
+/*ESTILIZAÇÃO DO HERO*/
 #hero {
   background: #FFC74E;
   height: 490px;
-  padding: 50px 0;
+  padding-top: 50px;
   
 }
 .conteudo_hero {
@@ -48,10 +49,16 @@ span {
 }
 
 
+/*ESTILIZAÇÃO DA SEÇÃO PRODUTOS*/
+
+#produtos {
+  margin: 200px 0px;
+}
+
 .caixas_produtos {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 25px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
 }
@@ -61,8 +68,8 @@ span {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  width: 300px;
-  height: 200px;
+  width: 450px;
+  height: 150px;
   background-color: #FFC74E;
   transition: transform 0.3s ease-in-out;
 }
@@ -74,11 +81,92 @@ span {
 }
 
 .caixa_produtos:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
+  color: white;
+  
 }
 
+
+/*ESTILIZAÇÃO DA SEÇÃO SOBRE*/
+#sobre {
+  background: #FFC74E;
+  padding: 100px 0 60px 0; /* antes era só padding-top e bottom igual */
+}
+
+#historia {
+  font-size: 38px;
+}
+
+.sinopse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+ 
+}
+
+.sinopse img {
+  border-radius: 5px;
+  height: 500px;
+}
+
+.texto_sobre {
+  width: 500px;
+  align-items: flex-start;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto_sobre h1 {
+  color: #53392E;
+  font-size: 38px;
+  
+}
+
+.texto_sobre p {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.maria {
+  padding-top: 250px;
+}
+
+.maria .texto_sobre {
+  align-items: flex-end;
+  text-align: justify;
+}
+
+
+/*ESTILIZAÇÃO DO CARROSEL DE FOTOS*/
+
+.carrossel {
+  margin-top: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrossel-inner {
+  gap: 5px;
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.carrossel-inner img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+/*ESTILIZAÇÃO DA SEÇÃO CONTATO*/
+
 #contato {
-  margin: 200px 0px;
+  background: #FFC74E;
+  padding: 60px 0 200px 0; /* início mais suave */
 }
 
 .info {
@@ -94,9 +182,9 @@ span {
 .caixa_info {
   background-color: white;
   height: 300px;
-  width: 280px;
+  width: 250px;
   position: relative;
-  border-radius: 12px;
+  border-radius: 5px;
   overflow: visible;
 }
 
@@ -137,8 +225,6 @@ span {
   color: #FFC74E;
 }
 
-
-
 .circulo {
   position: absolute;
   top: -60px;
@@ -146,7 +232,7 @@ span {
   transform: translateX(-50%);
   width: 130px;
   height: 130px;
-  background-color: #FFC74E;
+  background-color: #53392E;
   border-radius: 50%;
   z-index: 2;
   overflow: hidden;
@@ -161,73 +247,10 @@ span {
   margin-bottom: 5px;
 }
 
-#sobre {
-  background: #FFC74E;
-  padding: 100px 0px;
+#sobre,
+#contato {
+  margin: 0;
 }
 
-#historia {
-  font-size: 38px;
-}
 
-.sinopse {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  margin:  150px 0px;
-}
-
-.sinopse img {
-  border-radius: 5px;
-  height: 500px;
-}
-
-.texto_sobre {
-  width: 500px;
-  align-items: flex-start;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-}
-
-.texto_sobre h1 {
-  color: #53392E;
-  font-size: 38px;
-  
-}
-
-.texto_sobre p {
-  padding-top: 0;
-  margin-top: 0;
-}
-
-.maria {
-  margin-top: 250px;
-}
-
-.maria .texto_sobre {
-  align-items: flex-end;
-  text-align: justify;
-}
-
-.carrossel {
-  margin-top: 200px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carrossel-inner {
-  gap: 5px;
-  display: flex;
-  transition: transform 0.6s ease;
-}
-
-.carrossel-inner img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
 
